@@ -1,0 +1,193 @@
+/************* your name: Amir Djanabulova
+
+INSTRUCTIONS:
+Comments starting with TO-DO have been included in this file to describe the needed styling: please translate these to the appropriate CSS declarations. 
+
+Comments starting with TO-DO may be left in for reference or removed entirely: all other comments should be left as-is for ease of review.
+
+You are discouraged from changing any provided CSS.
+
+***** colour palette: *****
+- mustard yellow (used for header, footer, and buttons): #E5AF42
+- cornflower blue (used for hover states): #4278e5
+
+/* ... existing styles ... */
+
+.flex {
+    display: flex;
+}
+
+h1 {
+    font-size: 48px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%; /* Assuming full height for vertical centering */
+}
+
+h2 {
+    font-size: 36px;
+    margin-bottom: 12px;
+}
+
+.large-text {
+    font-size: 24px;
+}
+
+.fake-button {
+    background-color: #E5AF42; /* mustard yellow */
+    text-align: center;
+    line-height: 3;
+    border: 1px solid black;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.fake-button:hover,
+.blue-hover:hover {
+    text-decoration: underline;
+    background-color: #4278e5; /* cornflower blue */
+    color: white;
+    cursor: pointer;
+}
+
+header,
+footer {
+    background-color: #E5AF42; /* mustard yellow */
+    color: #fff; /* Assuming white text for contrast */
+}
+
+header {
+    height: 150px;
+}
+
+header img {
+    width: 100px;
+    height: 100px;
+    margin: 25px;
+}
+
+main {
+    margin-top: 25px;
+    margin-bottom: 50px;
+}
+
+footer {
+    height: 60px;
+    font-weight: 200;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Index page styles */
+.index-text-column {
+    width: calc(100% - 325px); /* Assuming full container width minus image width and margin */
+}
+
+.index-image {
+    width: 300px;
+    margin-left: 25px;
+    margin-bottom: 50px;
+}
+
+.index h2 {
+    line-height: 36px; /* Same as font-size */
+}
+
+.index p {
+    margin-bottom: 12px;
+}
+
+.index .fake-button {
+    width: 250px;
+    margin: 75px auto; /* Adjusted to center buttons with equal top and bottom margin */
+}
+
+/* Bookings page styles */
+.booking-page {
+    width: 600px;
+    margin: 0 auto;
+}
+
+.booking-page p,
+.booking-page li,
+.booking-page .small-button,
+.booking-page .clear-days {
+    text-align: center;
+}
+
+.booking-page p {
+    font-size: 18px;
+}
+
+.booking-page .day-selector {
+    margin-bottom: 12px;
+}
+
+.booking-page li {
+    width: 60px;
+    margin-bottom: 20px;
+    border: 1px solid black;
+}
+
+.booking-page .small-button {
+    border: 1px solid black;
+    padding: 5px;
+}
+
+.top-margin {
+    margin-top: 24px;
+    margin-bottom: 12px;
+}
+
+.clear-days {
+    width: 200px;
+}
+
+.clicked {
+    background-color: #E5AF42; /* mustard yellow */
+}
+
+/* Contact page styles */
+.contact main {
+    height: 420px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.labels-column {
+    width: 150px;
+    text-align: right;
+}
+
+.inputs-column {
+    width: 300px;
+    margin-left: 24px;
+}
+
+textarea {
+    height: 150px;
+}
+
+input,
+textarea,
+button {
+    font-family: 'Montserrat', sans-serif;
+    line-height: 24px;
+    font-size: 16px;
+    border: 1px solid black;
+    margin-bottom: 24px;
+}
+
+.contact button {
+    width: calc(300px - 2px); /* Width of textarea minus borders */
+}
